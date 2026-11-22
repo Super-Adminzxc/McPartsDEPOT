@@ -1,4 +1,7 @@
 <?php
+if (!extension_loaded('mysqli')) {
+    die("The 'mysqli' PHP extension is not loaded. Enable it in your php.ini (extension=mysqli) and restart the PHP server.");
+}
 $servername = "localhost";
 $username = "root"; // Change this to your database username
 $password = ""; // Change this to your database password
